@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monitored RSS Feeds</title>
+</head>
+<body>
+    <h1>Monitored RSS Feeds</h1>
+    <ul>
+        {% for url, channel_id in feeds %}
+        <li>{{ url }}: {{ channel_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
